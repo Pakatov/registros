@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(32, 103, 255), rgb(0, 225, 255));
+    backdrop-filter: brightness(70%);
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    background: linear-gradient(180deg, rgb(32, 103, 255), rgb(0, 225, 255));
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.nome{
+    height: 15%;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.363);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nome label{
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.781);
+}
+
+input[type='text']{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    width: 50%;
+    color: white;
+}
+
+input[type='submit']{
+    width: 130px;
+    height: 30px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.863);
+    background: linear-gradient(180deg, blue, rgb(0, 183, 255));
+    outline: 0;
+    border: 0;
+}
+
+input[type='submit']:hover{
+    cursor: pointer;
+}
+
+.registros{
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    overflow: scroll;
+    margin-top: 50px;
+}
+
+.registros::-webkit-scrollbar{
+    display: none;
+}
+
+.registro{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.411);
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 2px solid white;
+    flex-shrink: 0;
+    margin-bottom: 2px;
+}
+
+.registro.ultimo{
+    outline: 0;
+}
